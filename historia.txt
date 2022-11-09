@@ -1,1 +1,18 @@
-Estaba una vez el jugador
+Erase una vez en un Reino remoto un caballero llamado "", que andaba comiendo pan despues de un largo dia de trabajo. Cuando un dragon ataco el Reino y empezo a quemar todo a su paso. 
+"" empezo a correr porque queria proteger su pan, pero el dragon lo alcanzo y le robo el pan.
+"" Que haras ahora?
+    1. Le reventare su madre al dragon...
+    2. Comprare otro pan...
+    
+  2 = "" no se complico la vida, y se compro otro pan. El dragon regreso y destruyo el Reino. Fin.
+  1 = "" has decidido tomar venganza contra el Dragon, emprenderas un viaje largo en el que tendras que tomar decisiones importantes para poder lograr tu       objetivo.
+
+Tienes una decicion muy importante y crucial que te ayudara en este viaje...
+    1.Deberia ponerme mi armadura? 
+    2.me voy asi?
+  
+  1 = "" La armadura te ira ir mas lento por su peso, pero podras continuar
+  2 = "" Ten mucho cuidado, ir desprotegido podria causarte problemas
+    
+
+

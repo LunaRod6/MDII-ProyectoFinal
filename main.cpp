@@ -25,8 +25,8 @@ int main (){
     do{
     cout << "\nErase una vez en un Reino remoto un caballero llamado " << user << ", que andaba comiendo pan despues de un largo dia de trabajo.\nCuando un dragon ataco el Reino y empezo a quemar todo a su paso. " << user << " empezo a correr porque queria proteger a su pan, pero el dragon lo alcanzo y\nle robo el pan.\n" << endl;
 
-    cout << user << " Que haras ahora?\n" << endl;
-    prob = (1/2)*100;
+    cout << user << " que haras ahora?\n" << endl;
+    prob = 1.0/2.0*100.0;
     cout << "Probabilidades de ganar: " << prob << '%' << endl;
     cout << "1. Le reventare su madre al dragon..." << endl;
     cout << "2. Comprare otro pan..." << endl;
@@ -62,14 +62,14 @@ int main (){
 
 float Calc (){
     cout << "\nCalculadora de " << user << endl;
-    int a, b, c;
+    float a, b, c;
     cout << "Ingrese numero de casos favorables: ";
     cin >> a;
     cin.ignore();
     cout << "Ingrese numero de casos posibles: ";
     cin >> b;
     cin.ignore();
-    c = (a/b)*100;
+    c = (a/b)*100.0;
     return c;
 
 }
@@ -110,7 +110,7 @@ void Nivel3a (){
     cout << "Despues de que " << user << " derrotara a todos los duendes, al bosque llego el Dragon.\n" << user << "decidido a su venganza tiene la opcion de pelear con el Dragon por su pan. \nEl dragon empieza a escupir fuego por su boca, " << user << " decide esconderse entre los arboles, para cuando se de la oportunidad atacar a la cabeza al dragon.\n pero gracias a que posee armadura en su cuerpo el fuego no le afecta.\n" << user << " Tiene 3 opciones de ataque:\n1. Atacar las Alas \n2.Atacar la cola \n3.Atacar la Cabeza" << endl;
 
     
-    prob = (2/3)*100;
+    prob = (2.0/3.0)*100.0;
     cout << "Probabilidades de ganar: " << prob << '%'<< endl;
     cout << "Que parte atacaras?: ";
     cin >> opcion;
@@ -170,7 +170,7 @@ void Nivel3b (){
 
     cout << "Probabilidad calculada: " << prob << '%' << endl;
     
-    prob = (1/3)*100;
+    prob = (1.0/3.0)*100.0;
     cout << "Probabilidades de ganar: " << prob << '%'<< endl;
     cout << "Digita el porcentaje de probabilidad calculada: ";
     float respuesta ;
@@ -205,7 +205,7 @@ void Nivel2a (){
 
     cout << '\n';
     cout << user << " ha decidido ponerse la armadura completa.\n\nUna rama que cayo de los arboles destrozados por el dragon cayo sobre su cabeza, pero el casco lo protegio. \nExisten dos caminos para llegar a la cueva del dragon:\n\n1. El camino largo que es sobre el bosque \n2. El camino corto que es sobre el pantano." << endl;
-    prob = (1/2)*100;
+    prob = (1.0/2.0)*100.0;
     cout << "Probabilidades de ganar: " << prob << '%'<< endl;
     cout << "Digita el numero de acuerdo a tu seleccion: ";
     cin >> opcion;
@@ -228,9 +228,9 @@ void Nivel2a (){
 //Nivel 2b para el jugador
 void Nivel2b (){
 
-    cout << '\n';
-    cout << user << " ha decidido ponerse solo el casco.\n Una rama que cayo de los arboles destrozados por el dragon cayo sobre su cabeza, pero el casco lo protegio.\n Existen dos caminos para llegar a la cueva del dragon:\n1. El camino largo que es sobre el bosque \n2. El camino corto que es sobre el pantano." << endl;
-    prob = (1/2)*100;
+    cout << '\n' << endl;
+    cout << user << " ha decidido ponerse solo el casco.\nUna rama que cayo de los arboles destrozados por el dragon cayo sobre su cabeza, pero el casco lo protegio.\nExisten dos caminos para llegar a la cueva del dragon:\n1. El camino largo que es sobre el bosque \n2. El camino corto que es sobre el pantano." << endl;
+    prob = (1.0/2.0)*100.0;
     cout << "Probabilidades de ganar: " << prob << '%'<< endl;
     cout << "Digita el numero de acuerdo a tu seleccion: ";
     cin >> opcion;
@@ -255,7 +255,7 @@ void Nivel1 (){
 
     cout << '\n';
     cout << user << " ha decidido romperle la madre al Dragon.\n1. Deberia ponerme mi armadura completa? \n2. Con solo el casco es suficiente\n3. Me voy solo asi?\n" << endl;
-    prob = (2/3)*100;
+    prob = (2.0/3.0)*100.0;
     cout << "Probabilidades de ganar: " << prob << '%'<< endl;
     cout << "Digita el numero de acuerdo a tu seleccion: ";
     cin >> opcion;

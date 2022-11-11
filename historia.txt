@@ -13,6 +13,7 @@ Tienes una decicion muy importante y crucial que te ayudara en este viaje...
   
   1 = "" La armadura te ira ir mas lento por su peso, pero podras continuar
   2 = "" Ten mucho cuidado, ir desprotegido podria causarte problemas
+  
     
 
 

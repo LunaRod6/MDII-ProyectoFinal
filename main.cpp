@@ -50,7 +50,7 @@ int main (){
 
         }
 
-        cout << "Deseas volver a jugar? :\n 1. Si\n 2. No\n" << endl;
+        cout << "\nDeseas volver a jugar? :\n 1. Si\n 2. No\n" << endl;
         cin >> fin;
         cin.ignore();
     
@@ -95,7 +95,7 @@ void Nivel3a (){
                 intentos = 0;
         } else {
 
-            cout << "Respuesta incorrecta " ; intentos--; cout << "Te quedan: " << intentos << "intentos." << endl;
+            cout << "\nRespuesta incorrecta " ; intentos--; cout << "Te quedan: " << intentos << "intentos." << endl;
             if (intentos == 0){
                 opcion = 37;
             }
@@ -118,16 +118,16 @@ void Nivel3a (){
 
     switch(opcion){
         case 1:
-            cout << "Al atacar las Alas el Dragon ya no pudo volar. " << user << " hiciste un buen trabajo, el Dragon ya nunca robara pan a nadie." << endl;
+            cout << "\nAl atacar las Alas el Dragon ya no pudo volar. " << user << " hiciste un buen trabajo, el Dragon ya nunca robara pan a nadie." << endl;
             break;
         case 2:
-            cout << "Al atacar la cola el Dragon perdio equilibrio y lo mandaste a ver a San Pedro. " << user << " hiciste un buen trabajo, el Dragon ya nunca robara pan a nadie." << endl;
+            cout << "\nAl atacar la cola el Dragon perdio equilibrio y lo mandaste a ver a San Pedro. " << user << " hiciste un buen trabajo, el Dragon ya nunca robara pan a nadie." << endl;
             break;
         case 3:
-            cout << "Vuelve a estudiar MDII, por tu culpa los duendes se comieron a " << user << ". El dragon regreso y destruyo el Reino. Fin." << endl;
+            cout << "\nVuelve a estudiar MDII, por tu culpa los duendes se comieron a " << user << ". El dragon regreso y destruyo el Reino. Fin." << endl;
             break;
         default:
-            cout << "Opcion invalida" << endl;
+            cout << "\nOpcion invalida" << endl;
             break;
     }
 
@@ -136,12 +136,12 @@ void Nivel3a (){
 //Nivel 3b para el jugador
 void Nivel3b (){
 
-    cout << '\n';
+    cout << '\n' << endl;
     int intentos = 3;
-    cout << user << " ha decidido irse por el bosque.\n Entre los arboles del bosque se econtro a unos duendes (secuaces del dragon) eran 13. \n 5 amarillos, 1 Rojo, 3 Azules y 4 Violeta." << endl ;
+    cout << user << " ha decidido irse por el bosque.\nEntre los arboles del bosque se econtro a unos duendes (secuaces del dragon) eran 13. \n5 amarillos, 1 Rojo, 3 Azules y 4 Violeta." << endl ;
     
     do {
-        cout << " Un duende Azul ataco a "<< user <<". \nQue color de duende tiene mas probabilidad de ser derrotado ahora?\n1. Uno Amarillo \n2. Uno Rojo \n3. Uno Azul \n4. Uno Violeta" << endl;
+        cout << "Un duende Azul ataco a "<< user <<". \nQue color de duende tiene mas probabilidad de ser derrotado ahora?\n\n1. Uno Amarillo \n2. Uno Rojo \n3. Uno Azul \n4. Uno Violeta" << endl;
 
         prob = Calc();
         cout << "Probabilidad calculada: " << prob << '%' << endl;
@@ -150,11 +150,11 @@ void Nivel3b (){
         cin >> opcion;
         
         if (opcion == 1){
-                cout << "\nEs correcto, el siguiente duende en ser derrotado fue un Amarillo " << endl;
+                cout << "\nEs correcto, el siguiente duende en ser derrotado fue un Amarillo \n" << endl;
                 intentos = 0;
         } else {
 
-            cout << "Respuesta incorrecta " ; intentos--; cout << "Te quedan: " << intentos << "intentos." << endl;
+            cout << "\nRespuesta incorrecta " ; intentos--; cout << "Te quedan: " << intentos << " intentos." << endl;
             if (intentos == 0){
                 opcion = 37;
             }
@@ -166,8 +166,9 @@ void Nivel3b (){
         opcion = 3;
     } else {
     
-    cout << "Despues de que " << user << " derrotara a todos los duendes, al bosque llego el Dragon.\n" << user << "decidido a su venganza tiene la opcion de pelear con el Dragon por su pan. \nEl dragon empieza a escupir fuego por su boca, " << user << " decide esconderse entre los arboles, para cuando se de la oportunidad atacar a la cabeza al dragon.\n Existen 7 arboles, 2 de los cuales son resistentes al fuego.\n Cual es la probabilidad de escoger el arbol correcto al segundo intento, si fallo al primero? " << endl;
+    cout << "Despues de que " << user << " derrotara a todos los duendes, al bosque llego el Dragon.\n" << user << " respetando su venganza tiene la opcion de pelear con el Dragon por su pan. \nEl dragon empieza a escupir fuego por su boca, " << user << " decide esconderse entre los arboles, para cuando se de la oportunidad atacar a la cabeza al dragon.\n Existen 7 arboles, 2 de los cuales son resistentes al fuego.\n Cual es la probabilidad de escoger el arbol correcto al segundo intento, si fallo al primero? " << endl;
 
+    prob = Calc();
     cout << "Probabilidad calculada: " << prob << '%' << endl;
     
     prob = (1.0/3.0)*100.0;
@@ -188,13 +189,13 @@ void Nivel3b (){
             
             break;
         case 2:
-            cout << "Vuelve a estudiar MDII, por tu culpa los duendes se comieron a " << user << ". El dragon regreso y destruyo el Reino. Fin." << endl;
+            cout << "\nVuelve a estudiar MDII, por tu culpa los duendes se comieron a " << user << ". El dragon regreso y destruyo el Reino. Fin." << endl;
             break;
         case 3:
-            cout << "Vuelve a estudiar MDII, por tu culpa los duendes se comieron a " << user << ". El dragon regreso y destruyo el Reino. Fin." << endl;
+            cout << "\nVuelve a estudiar MDII, por tu culpa los duendes se comieron a " << user << ". El dragon regreso y destruyo el Reino. Fin." << endl;
             break;
         default:
-            cout << "Opcion invalida" << endl;
+            cout << "\nOpcion invalida" << endl;
             break;
     }
 
@@ -204,7 +205,7 @@ void Nivel3b (){
 void Nivel2a (){
 
     cout << '\n';
-    cout << user << " ha decidido ponerse la armadura completa.\n\nUna rama que cayo de los arboles destrozados por el dragon cayo sobre su cabeza, pero el casco lo protegio. \nExisten dos caminos para llegar a la cueva del dragon:\n\n1. El camino largo que es sobre el bosque \n2. El camino corto que es sobre el pantano." << endl;
+    cout << user << " ha decidido ponerse la armadura completa.\n\nUna rama que cayo de los arboles destrozados por el dragon cayo sobre su cabeza, pero el casco lo protegio. \nExisten dos caminos para llegar a la cueva del dragon:\n\n1. El camino largo que es sobre el bosque \n2. El camino corto que es sobre el pantano.\n" << endl;
     prob = (1.0/2.0)*100.0;
     cout << "Probabilidades de ganar: " << prob << '%'<< endl;
     cout << "Digita el numero de acuerdo a tu seleccion: ";
@@ -216,10 +217,10 @@ void Nivel2a (){
             Nivel3a();
             break;
         case 2:
-            cout << "Al no poseer casco los bichos del pantano le picaron la cabeza a " << user << " y le dio Zica. El dragon regreso y destruyo el Reino. Fin." << endl;
+            cout << "\nAl no poseer casco los bichos del pantano le picaron la cabeza a " << user << " y le dio Zica. El dragon regreso y destruyo el Reino. Fin." << endl;
             break;
         default:
-            cout << "Opcion invalida" << endl;
+            cout << "\nOpcion invalida" << endl;
             break;
     }
 
@@ -229,7 +230,7 @@ void Nivel2a (){
 void Nivel2b (){
 
     cout << '\n' << endl;
-    cout << user << " ha decidido ponerse solo el casco.\nUna rama que cayo de los arboles destrozados por el dragon cayo sobre su cabeza, pero el casco lo protegio.\nExisten dos caminos para llegar a la cueva del dragon:\n1. El camino largo que es sobre el bosque \n2. El camino corto que es sobre el pantano." << endl;
+    cout << user << " ha decidido ponerse solo el casco.\nUna rama que cayo de los arboles destrozados por el dragon cayo sobre su cabeza, pero el casco lo protegio.\nExisten dos caminos para llegar a la cueva del dragon:\n1. El camino largo que es sobre el bosque \n2. El camino corto que es sobre el pantano.\n" << endl;
     prob = (1.0/2.0)*100.0;
     cout << "Probabilidades de ganar: " << prob << '%'<< endl;
     cout << "Digita el numero de acuerdo a tu seleccion: ";
@@ -241,10 +242,10 @@ void Nivel2b (){
             Nivel3b();
             break;
         case 2:
-            cout << "Al no poseer armadura en el cuerpo, los bichos del pantano infectaron a " << user << " y le dio Zica. El dragon regreso y destruyo el Reino. Fin." << endl;
+            cout << "\nAl no poseer armadura en el cuerpo, los bichos del pantano infectaron a " << user << " y le dio Zica. El dragon regreso y destruyo el Reino. Fin." << endl;
             break;
         default:
-            cout << "Opcion invalida" << endl;
+            cout << "\nOpcion invalida" << endl;
             break;
     }
 
@@ -253,7 +254,7 @@ void Nivel2b (){
 //Nivel 1 para el jugador
 void Nivel1 (){
 
-    cout << '\n';
+    cout << '\n' << endl;
     cout << user << " ha decidido romperle la madre al Dragon.\n1. Deberia ponerme mi armadura completa? \n2. Con solo el casco es suficiente\n3. Me voy solo asi?\n" << endl;
     prob = (2.0/3.0)*100.0;
     cout << "Probabilidades de ganar: " << prob << '%'<< endl;
@@ -272,7 +273,7 @@ void Nivel1 (){
             cout << "\nAl no poseer ningun tipo de proteccion, " << user << " no resistio el golpe de una rama que le cayo en la cabeza. El dragon regreso y destruyo el Reino. Fin." << endl;
             break;
         default:
-            cout << "Opcion invalida" << endl;
+            cout << "\nOpcion invalida" << endl;
             break;
     }
 

@@ -77,7 +77,7 @@ float Calc (){
 //Nivel 3a para el jugador
 void Nivel3a (){
 
-    cout << '\n';
+    cout << '\n' << endl;
     int intentos = 3;
     cout << user << " ha decidido irse por el bosque.\n\nEntre los arboles del bosque se econtro a unos duendes (secuaces del dragon) eran 13.\n5 amarillos, 1 Rojo, 3 Azules y 4 Violeta." << endl ;
     
@@ -107,7 +107,7 @@ void Nivel3a (){
         opcion = 3;
     } else {
     
-    cout << "Despues de que " << user << " derrotara a todos los duendes, al bosque llego el Dragon.\n" << user << "decidido a su venganza tiene la opcion de pelear con el Dragon por su pan. \nEl dragon empieza a escupir fuego por su boca, " << user << " decide esconderse entre los arboles, para cuando se de la oportunidad atacar a la cabeza al dragon.\n pero gracias a que posee armadura en su cuerpo el fuego no le afecta.\n" << user << " Tiene 3 opciones de ataque:\n1. Atacar las Alas \n2.Atacar la cola \n3.Atacar la Cabeza" << endl;
+    cout << "\nDespues de que " << user << " derrotara a todos los duendes, al bosque llego el Dragon.\n" << user << " respetando su venganza tiene la opcion de pelear con el Dragon por su pan. \n\nEl dragon empieza a escupir fuego por su boca, " << user << " decide esconderse entre los arboles, para cuando se de la oportunidad atacar a la cabeza al dragon.\npero gracias a que posee armadura en su cuerpo el fuego no le afecta.\n" << user << " Tiene 3 opciones de ataque:\n\n1.Atacar las Alas \n2.Atacar la cola \n3.Atacar la Cabeza" << endl;
 
     
     prob = (2.0/3.0)*100.0;
@@ -121,7 +121,7 @@ void Nivel3a (){
             cout << "\nAl atacar las Alas el Dragon ya no pudo volar. " << user << " hiciste un buen trabajo, el Dragon ya nunca robara pan a nadie." << endl;
             break;
         case 2:
-            cout << "\nAl atacar la cola el Dragon perdio equilibrio y lo mandaste a ver a San Pedro. " << user << " hiciste un buen trabajo, el Dragon ya nunca robara pan a nadie." << endl;
+            cout << "\nAl atacar la cola el Dragon perdio el equilibrio y lo mandaste a ver a San Pedro. " << user << " hiciste un buen trabajo, el Dragon ya nunca robara pan a nadie." << endl;
             break;
         case 3:
             cout << "\nVuelve a estudiar MDII, por tu culpa los duendes se comieron a " << user << ". El dragon regreso y destruyo el Reino. Fin." << endl;

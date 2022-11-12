@@ -104,7 +104,7 @@ void Nivel3a (){
     }while (intentos != 0);
 
     if (opcion == 37){
-        opcion = 3;
+        opcion = 4;
     } else {
     
     cout << "\nDespues de que " << user << " derrotara a todos los duendes, al bosque llego el Dragon.\n" << user << " respetando su venganza tiene la opcion de pelear con el Dragon por su pan. \n\nEl dragon empieza a escupir fuego por su boca, " << user << " decide esconderse entre los arboles, para cuando se de la oportunidad atacar a la cabeza al dragon.\npero gracias a que posee armadura en su cuerpo el fuego no le afecta.\n" << user << " Tiene 3 opciones de ataque:\n\n1.Atacar las Alas \n2.Atacar la cola \n3.Atacar la Cabeza" << endl;
@@ -124,6 +124,9 @@ void Nivel3a (){
             cout << "\nAl atacar la cola el Dragon perdio el equilibrio y lo mandaste a ver a San Pedro. " << user << " hiciste un buen trabajo, el Dragon ya nunca robara pan a nadie." << endl;
             break;
         case 3:
+            cout << "\nAl atacar la cabeza el dragon se comio a " << user << ". El dragon regreso y destruyo el Reino. Fin. (No debiste atacar la cabeza)." << endl;
+            break;
+        case 4:
             cout << "\nVuelve a estudiar MDII, por tu culpa los duendes se comieron a " << user << ". El dragon regreso y destruyo el Reino. Fin." << endl;
             break;
         default:

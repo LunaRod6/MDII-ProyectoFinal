@@ -18,7 +18,7 @@ void Nivel1();
 
 int main (){
 
-    
+    system("cls");
     cout << "Ingresa tu nombre de jugador " << endl;
     getline(cin, user);
 
@@ -33,7 +33,7 @@ int main (){
 
     cin >> p;
     
-
+    
         switch (p){
         case 1:
             
@@ -50,7 +50,7 @@ int main (){
 
         }
 
-        system("cls");
+       
         cout << "\nDeseas volver a jugar? :\n 1. Si\n 2. No\n" << endl;
         cin >> fin;
         cin.ignore();

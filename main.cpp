@@ -23,7 +23,7 @@ int main (){
     getline(cin, user);
 
     do{
-    cout << "\nErase una vez en un Reino remoto un caballero llamado " << user << ", que andaba comiendo pan despues de un largo dia de trabajo.\nCuando un dragon ataco el Reino y empezo a quemar todo a su paso. " << user << " empezo a correr porque queria proteger a su pan, pero el dragon lo alcanzo y\nle robo el pan.\n" << endl;
+    cout << "\nErase una vez en un lejano reino, un caballero llamado " << user << "se deleitaba el paladar comiendo pan despues de un largo dia de trabajo.\nCuando un derrepente un dragon aparecio y empezo a destruir todo a su paso. " << user << " empezo a correr porque queria proteger a su pan, pero el dragon lo alcanzo y, dispuesto  a cometer crimenes de guerra, \nle robo el pan.\n" << endl;
 
     cout << user << " que haras ahora?\n" << endl;
     prob = 1.0/2.0*100.0;
@@ -79,10 +79,10 @@ void Nivel3a (){
 
     cout << '\n' << endl;
     int intentos = 3;
-    cout << user << " ha decidido irse por el bosque.\n\nEntre los arboles del bosque se econtro a unos duendes (secuaces del dragon) eran 13.\n5 amarillos, 1 Rojo, 3 Azules y 4 Violeta." << endl ;
+    cout << user << " ha decidido irse por el bosque.\n\nEntre los arboles del bosque se econtro a unos duendes (secuaces del dragon) eran 13.\n5 con espadas, 1 con un hacha, 3 sin nada y 4 con garrotes." << endl ;
     
     do {
-        cout << "\nUn duende Azul ataco a "<< user <<". \n\nQue color de duende tiene mas probabilidad de ser derrotado ahora?\n1. Uno Amarillo \n2. Uno Rojo \n3. Uno Azul \n4. Uno Violeta" << endl;
+        cout << "\nUn duende ataco a "<< user <<". \n\n por que tipo de duende es mas probable ser atacado?\n1. Uno con espada \n2. Uno con hacha\n3. Uno sin nada \n4. Uno con gaarrote" << endl;
 
         prob = Calc();
         cout << "Probabilidad calculada: " << prob << '%' << endl;
@@ -91,7 +91,7 @@ void Nivel3a (){
         cin >> opcion;
         
         if (opcion == 1){
-                cout << "\nEs correcto, el siguiente duende en ser derrotado fue un Amarillo " << endl;
+                cout << "\nEs correcto, el primer duende que ataco fue uno con espada " << endl;
                 intentos = 0;
         } else {
 
@@ -127,7 +127,7 @@ void Nivel3a (){
             cout << "\nAl atacar la cabeza el dragon se comio a " << user << ". El dragon regreso y destruyo el Reino. Fin. (No debiste atacar la cabeza)." << endl;
             break;
         case 4:
-            cout << "\nVuelve a estudiar MDII, por tu culpa los duendes se comieron a " << user << ". El dragon regreso y destruyo el Reino. Fin." << endl;
+            cout << "\nVuelve a estudiar MDII, el dragon se comio a " << user << "y destruyo el Reino. Fin." << endl;
             break;
         default:
             cout << "\nOpcion invalida" << endl;
@@ -141,10 +141,10 @@ void Nivel3b (){
 
     cout << '\n' << endl;
     int intentos = 3;
-    cout << user << " ha decidido irse por el bosque.\nEntre los arboles del bosque se econtro a unos duendes (secuaces del dragon) eran 13. \n5 amarillos, 1 Rojo, 3 Azules y 4 Violeta." << endl ;
+    cout << user << " ha decidido irse por el bosque.\n\nEntre los arboles del bosque se econtro a unos duendes (secuaces del dragon) eran 13.\n5 con espadas, 1 con un hacha, 3 sin nada y 4 con garrotes." << endl ;
     
     do {
-        cout << "Un duende Azul ataco a "<< user <<". \nQue color de duende tiene mas probabilidad de ser derrotado ahora?\n\n1. Uno Amarillo \n2. Uno Rojo \n3. Uno Azul \n4. Uno Violeta" << endl;
+        cout << "\nUn duende ataco a "<< user <<". \n\n por que tipo de duende es mas probable ser atacado?\n1. Uno con espada \n2. Uno con hacha\n3. Uno sin nada \n4. Uno con gaarrote" << endl;
 
         prob = Calc();
         cout << "Probabilidad calculada: " << prob << '%' << endl;
@@ -153,7 +153,7 @@ void Nivel3b (){
         cin >> opcion;
         
         if (opcion == 1){
-                cout << "\nEs correcto, el siguiente duende en ser derrotado fue un Amarillo \n" << endl;
+                cout << "\nEs correcto, el primer duende que ataco fue uno con espada \n" << endl;
                 intentos = 0;
         } else {
 
@@ -220,7 +220,7 @@ void Nivel2a (){
             Nivel3a();
             break;
         case 2:
-            cout << "\nAl no poseer casco los bichos del pantano le picaron la cabeza a " << user << " y le dio Zica. El dragon regreso y destruyo el Reino. Fin." << endl;
+            cout << "\nAl poseer una armadura muy pesada, " << user << " se hunde en el pantano lo que provoca su triste final. Fin." << endl;
             break;
         default:
             cout << "\nOpcion invalida" << endl;
@@ -245,7 +245,7 @@ void Nivel2b (){
             Nivel3b();
             break;
         case 2:
-            cout << "\nAl no poseer armadura en el cuerpo, los bichos del pantano infectaron a " << user << " y le dio Zica. El dragon regreso y destruyo el Reino. Fin." << endl;
+            cout << "\nAl no poseer armadura en el cuerpo, los bichos del pantano picaron e infectaron a " << user << " y le dio Zica. El dragon regreso y destruyo el Reino. Fin." << endl;
             break;
         default:
             cout << "\nOpcion invalida" << endl;
@@ -258,7 +258,7 @@ void Nivel2b (){
 void Nivel1 (){
 
     cout << '\n' << endl;
-    cout << user << " ha decidido romperle la madre al Dragon.\n1. Deberia ponerme mi armadura completa? \n2. Con solo el casco es suficiente\n3. Me voy solo asi?\n" << endl;
+    cout << user << " he decidido romperle la madre al Dragon.\n1. Deberia ponerme mi armadura completa? \n2. Con solo el casco es suficiente\n3. la armadura me estorba\n" << endl;
     prob = (2.0/3.0)*100.0;
     cout << "Probabilidades de ganar: " << prob << '%'<< endl;
     cout << "Digita el numero de acuerdo a tu seleccion: ";
@@ -273,7 +273,7 @@ void Nivel1 (){
             Nivel2b();
             break;
         case 3:
-            cout << "\nAl no poseer ningun tipo de proteccion, " << user << " no resistio el golpe de una rama que le cayo en la cabeza. El dragon regreso y destruyo el Reino. Fin." << endl;
+            cout << "\nAl no poseer ningun tipo de proteccion, " << user << " una rama golpeo al joven caballero en la cabeza lo que le produjo una contucion cerebral resultando en la completa perdida de sus mosiones cognitivas. El dragon destruyo el Reino y vivio feliz para siempre. Fin." << endl;
             break;
         default:
             cout << "\nOpcion invalida" << endl;

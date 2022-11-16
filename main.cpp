@@ -50,6 +50,7 @@ int main (){
 
         }
 
+        system("cls");
         cout << "\nDeseas volver a jugar? :\n 1. Si\n 2. No\n" << endl;
         cin >> fin;
         cin.ignore();
@@ -77,6 +78,7 @@ float Calc (){
 //Nivel 3a para el jugador
 void Nivel3a (){
 
+    system("cls");
     cout << '\n' << endl;
     int intentos = 3;
     cout << user << " ha decidido irse por el bosque.\n\nEntre los arboles del bosque se econtro a unos duendes (secuaces del dragon) eran 13.\n5 con espadas, 1 con un hacha, 3 sin nada y 4 con garrotes." << endl ;
@@ -139,6 +141,7 @@ void Nivel3a (){
 //Nivel 3b para el jugador
 void Nivel3b (){
 
+    system("cls");
     cout << '\n' << endl;
     int intentos = 3;
     cout << user << " ha decidido irse por el bosque.\n\nEntre los arboles del bosque se econtro a unos duendes (secuaces del dragon) eran 13.\n5 con espadas, 1 con un hacha, 3 sin nada y 4 con garrotes." << endl ;
@@ -207,6 +210,7 @@ void Nivel3b (){
 //Nivel 2a para el jugador
 void Nivel2a (){
 
+    system("cls");
     cout << '\n';
     cout << user << " ha decidido ponerse la armadura completa.\n\nUna rama que cayo de los arboles destrozados por el dragon cayo sobre su cabeza, pero el casco lo protegio. \nExisten dos caminos para llegar a la cueva del dragon:\n\n1. El camino largo que es sobre el bosque \n2. El camino corto que es sobre el pantano.\n" << endl;
     prob = (1.0/2.0)*100.0;
@@ -232,6 +236,7 @@ void Nivel2a (){
 //Nivel 2b para el jugador
 void Nivel2b (){
 
+    system("cls");
     cout << '\n' << endl;
     cout << user << " ha decidido ponerse solo el casco.\nUna rama que cayo de los arboles destrozados por el dragon cayo sobre su cabeza, pero el casco lo protegio.\nExisten dos caminos para llegar a la cueva del dragon:\n1. El camino largo que es sobre el bosque \n2. El camino corto que es sobre el pantano.\n" << endl;
     prob = (1.0/2.0)*100.0;
@@ -257,6 +262,7 @@ void Nivel2b (){
 //Nivel 1 para el jugador
 void Nivel1 (){
 
+    system("cls");
     cout << '\n' << endl;
     cout << user << " he decidido romperle la madre al Dragon.\n1. Deberia ponerme mi armadura completa? \n2. Con solo el casco es suficiente\n3. la armadura me estorba\n" << endl;
     prob = (2.0/3.0)*100.0;

@@ -23,7 +23,7 @@ int main (){
     getline(cin, user);
 
     do{
-    cout << "\nErase una vez en un lejano reino, un caballero llamado " << user << "se deleitaba el paladar comiendo pan despues de un largo dia de trabajo.\nCuando un derrepente un dragon aparecio y empezo a destruir todo a su paso. " << user << " empezo a correr porque queria proteger a su pan, pero el dragon lo alcanzo y, dispuesto  a cometer crimenes de guerra, \nle robo el pan.\n" << endl;
+    cout << "\nErase una vez en un lejano reino, un caballero llamado " << user << " se deleitaba el paladar comiendo pan despues de un largo dia de trabajo.\nCuando derrepente un dragon aparecio y empezo a destruir todo a su paso. " << user << " empezo a correr porque queria proteger a su pan, pero el dragon lo alcanzo y,\n dispuesto  a cometer crimenes de guerra, \nle robo el pan.\n" << endl;
 
     cout << user << " que haras ahora?\n" << endl;
     prob = 1.0/2.0*100.0;
@@ -107,7 +107,7 @@ void Nivel3a (){
         opcion = 4;
     } else {
     
-    cout << "\nDespues de que " << user << " derrotara a todos los duendes, al bosque llego el Dragon.\n" << user << " respetando su venganza tiene la opcion de pelear con el Dragon por su pan. \n\nEl dragon empieza a escupir fuego por su boca, " << user << " decide esconderse entre los arboles, para cuando se de la oportunidad atacar a la cabeza al dragon.\npero gracias a que posee armadura en su cuerpo el fuego no le afecta.\n" << user << " Tiene 3 opciones de ataque:\n\n1.Atacar las Alas \n2.Atacar la cola \n3.Atacar la Cabeza" << endl;
+    cout << "\nDespues de que " << user << " derrotara a todos los duendes, al bosque llego el Dragon.\n" << user << " respetando su venganza tiene la opcion de pelear con el Dragon por su pan. \n\nEl dragon empieza a escupir fuego por su boca, " << user << " decide esconderse entre los arboles, para cuando se de la oportunidad atacar al dragon.\ny gracias a que posee armadura en su cuerpo el fuego no le afecta.\n" << user << " Tiene 3 opciones de ataque:\n\n1.Atacar las Alas \n2.Atacar la cola \n3.Atacar la Cabeza" << endl;
 
     
     prob = (2.0/3.0)*100.0;
@@ -121,10 +121,10 @@ void Nivel3a (){
             cout << "\nAl atacar las Alas el Dragon ya no pudo volar. " << user << " hiciste un buen trabajo, el Dragon ya nunca robara pan a nadie." << endl;
             break;
         case 2:
-            cout << "\nAl atacar la cola el Dragon perdio el equilibrio y lo mandaste a ver a San Pedro. " << user << " hiciste un buen trabajo, el Dragon ya nunca robara pan a nadie." << endl;
+            cout << "\n... Esa no es su cola pero... fue aun mas efectivo... " << user << " hiciste un buen trabajo, el Dragon ya nunca robara pan a nadie." << endl;
             break;
         case 3:
-            cout << "\nAl atacar la cabeza el dragon se comio a " << user << ". El dragon regreso y destruyo el Reino. Fin. (No debiste atacar la cabeza)." << endl;
+            cout << "\nAl atacar la cabeza el dragon, este se comio a " << user << ". El dragon regreso y destruyo el Reino. Fin. (No debiste atacar la cabeza)." << endl;
             break;
         case 4:
             cout << "\nVuelve a estudiar MDII, el dragon se comio a " << user << "y destruyo el Reino. Fin." << endl;
@@ -176,7 +176,7 @@ void Nivel3b (){
     
     prob = (1.0/3.0)*100.0;
     cout << "Probabilidades de ganar: " << prob << '%'<< endl;
-    cout << "Digita el porcentaje de probabilidad calculada: ";
+    cout << "Digita el porcentaje de probabilidad calculada(dos decimales): ";
     float respuesta ;
     cin >> respuesta;
     
@@ -192,7 +192,7 @@ void Nivel3b (){
             
             break;
         case 2:
-            cout << "\nVuelve a estudiar MDII, por tu culpa los duendes se comieron a " << user << ". El dragon regreso y destruyo el Reino. Fin." << endl;
+            cout << "\nVuelve a estudiar MDII, por tus fallas de calculo, calcinando a " << user << ". El dragon regreso y destruyo el Reino. Fin." << endl;
             break;
         case 3:
             cout << "\nVuelve a estudiar MDII, por tu culpa los duendes se comieron a " << user << ". El dragon regreso y destruyo el Reino. Fin." << endl;
@@ -258,7 +258,7 @@ void Nivel2b (){
 void Nivel1 (){
 
     cout << '\n' << endl;
-    cout << user << " he decidido romperle la madre al Dragon.\n1. Deberia ponerme mi armadura completa? \n2. Con solo el casco es suficiente\n3. la armadura me estorba\n" << endl;
+    cout << user << " he decidido romperle la madre al Dragon.\n1. Me ponerme mi armadura completa \n2. Con solo el casco es suficiente\n3. la armadura me estorba\n" << endl;
     prob = (2.0/3.0)*100.0;
     cout << "Probabilidades de ganar: " << prob << '%'<< endl;
     cout << "Digita el numero de acuerdo a tu seleccion: ";

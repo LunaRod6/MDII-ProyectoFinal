@@ -192,7 +192,7 @@ void Nivel3b (){
             
             break;
         case 2:
-            cout << "\nVuelve a estudiar MDII, por tus fallas de calculo, calcinando a " << user << ". El dragon regreso y destruyo el Reino. Fin." << endl;
+            cout << "\nVuelve a estudiar MDII, por tus fallas de calculo, " << user << " Termino calcinado. El dragon regreso y destruyo el Reino. Fin." << endl;
             break;
         case 3:
             cout << "\nVuelve a estudiar MDII, por tu culpa los duendes se comieron a " << user << ". El dragon regreso y destruyo el Reino. Fin." << endl;

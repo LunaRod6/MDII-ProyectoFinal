@@ -1,2 +1,2 @@
 # MDII-ProyectoFinal
-Repositorio creado para trabajar el proyecto fianl de PED
+Repositorio creado para trabajar el proyecto final de PED
